@@ -1,0 +1,10 @@
+{
+  "name": "rpapi-workspace",
+  "version": "1.0.0",
+  "description": "Rpapi workspace",
+  "scripts": {
+    "clean": "git clean -dfX"
+  },
+  "author": "",
+  "license": "MIT"
+}

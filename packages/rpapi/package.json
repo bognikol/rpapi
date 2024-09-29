@@ -1,0 +1,31 @@
+{
+  "name": "@bognikol/rpapi",
+  "version": "0.8.1",
+  "description": "RPC implementation between browser and Node server that uses TypeScript as an interface enforcer.",
+  "exports": {
+    ".": "./src/index.ts",
+    "./client": "./src/client.ts",
+    "./server": "./src/server.ts"
+  },
+  "scripts": {
+    "build": "tsc",
+    "prepack": "pnpm run build"
+  },
+  "files": [
+    "src",
+    "bin"
+  ],
+  "bin": {
+    "rpapi": "bin/entry.js"
+  },
+  "author": "Bogdan Nikolic <bogdan_nikolic@hotmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.14.2",
+    "typescript": "^5.6.2"
+  },
+  "dependencies": {
+    "commander": "^12.1.0"
+  }
+}
