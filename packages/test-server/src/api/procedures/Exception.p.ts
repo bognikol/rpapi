@@ -1,4 +1,4 @@
-import { Handler, SuccessStatus } from "rpapi";
+import { Handler, SuccessStatus } from "@bognikol/rpapi";
 
 import { ERROR_MESSAGE } from "../../common";
 

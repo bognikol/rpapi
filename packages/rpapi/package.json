@@ -1,6 +1,6 @@
 {
   "name": "@bognikol/rpapi",
-  "version": "0.8.1",
+  "version": "0.8.2",
   "description": "RPC implementation between browser and Node server that uses TypeScript as an interface enforcer.",
   "exports": {
     ".": "./src/index.ts",

@@ -17,10 +17,4 @@ export type Rp<TRequest, TResponse extends RpSuccessResponse> =
     (request: TRequest) => Promise<TResponse | RpErrorResponse>;
 
 export type Handler<TRequest, TResponse  extends RpSuccessResponse> =
-    (request: TRequest, token: string) => Promise<TResponse | RpErrorResponse>;
-
-export interface Paginatable {
-    pageOffset: number;
-    pageSize: number;
-    total: number;
-}
+    (request: TRequest, token?: string) => Promise<TResponse | RpErrorResponse>;

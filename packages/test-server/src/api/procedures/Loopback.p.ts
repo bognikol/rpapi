@@ -1,4 +1,4 @@
-import { Handler, SuccessStatus } from "rpapi";
+import { Handler, SuccessStatus } from "@bognikol/rpapi";
 
 export interface LoopbackRequest {
     f1: string;
@@ -19,7 +19,7 @@ export interface LoopbackResponse {
 }
 
 export const Loopback: Handler<LoopbackRequest, LoopbackResponse> = 
-async (request: LoopbackRequest, token) => {
+async (request: LoopbackRequest, token: string) => {
     return Promise.resolve({
         status: 200,
         token,
